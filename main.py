@@ -22,14 +22,14 @@ trello_json_file.close()
 
 @app.route('/jira/')
 def jira():
-    if request.headers.get('a') == '42':
+    if request.headers.get('a') == 'Acess-Control-Allow-Origin':
         return jsonify(jira_data), 200
     return jsonify(jira_data), 200
 
 
 @app.route('/trello/')
 def trello():
-    if request.headers.get('a') == '42':
+    if request.headers.get('a') == 'Acess-Control-Allow-Origin':
         return jsonify(trello_data), 200
     return jsonify(trello_data), 200
 
