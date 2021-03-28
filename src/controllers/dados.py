@@ -23,7 +23,7 @@ trello_json_file.close()
 @api.route('/data')
 class Dadoslist(Resource):
     def get(self,):
-        return jira_data
+        return jira_data, trello_data
 
     def post(self,):
         response = api.payload
