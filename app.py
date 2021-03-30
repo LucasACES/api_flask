@@ -1,23 +1,19 @@
 import json
 import os
 from flask import Flask, jsonify, request
-from flask_cors import CORS, cross_origin
+from flask-cors import CORS, cross_origin
 
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 cors = CORS(app, resources={r"/dados/*": {"origins": "*"}})
 
-# gerando lista de dados
-
 jira_json_file = open(file='jira_formatted.json')
 trello_json_file = open(file='trello_formatted.json')
 
-# Lendo o arquivo como Json.
 jira_data = json.load(jira_json_file)
 trello_data = json.load(trello_json_file)
 
-# Fechando o arquivo, visto que ele não é mais necessário.
 jira_json_file.close()
 trello_json_file.close()
 
