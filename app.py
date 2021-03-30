@@ -1,9 +1,11 @@
 import json
 import os
 from flask import Flask, jsonify, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 cors = CORS(app, resources={r"/dados/*": {"origins": "*"}})
 
 # gerando lista de dados
@@ -20,16 +22,15 @@ jira_json_file.close()
 trello_json_file.close()
 
 
-dados = jira_data + trello_data
-
-
 @app.route("/dados/jira/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def jira():
     if request.method == "GET":
         return jsonify(jira_data)
 
 
 @app.route("/dados/trello/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def trello():
     if request.method == "GET":
         return jsonify(trello_data)
