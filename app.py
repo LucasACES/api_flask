@@ -21,16 +21,10 @@ trello_json_file.close()
 dados = jira_data + trello_data
 
 
-@app.route("/jira", methods=["GET"])
-def jira():
+@app.route("/dados", methods=["GET"])
+def dados():
     if request.method == "GET":
-        return jsonify(jira_data)
-
-
-@app.route("/trello", methods=["GET"])
-def trello():
-    if request.method == "GET":
-        return jsonify(trello_data)
+        return jsonify(dados)
 
 
 if __name__ == "__main__":
