@@ -8,28 +8,27 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 cors = CORS(app, resources={r"/dados/*": {"origins": "*"}})
 
-jira_json_file = open(file='jira_formatted.json')
-trello_json_file = open(file='trello_formatted.json')
+data_json_file = open(file='dadosFormatados.json')
+data_all = json.load(data_json_file)
+data_json_file.close()
 
-jira_data = json.load(jira_json_file)
-trello_data = json.load(trello_json_file)
-
-jira_json_file.close()
-trello_json_file.close()
+status_count_json_file = open(file='status_count.json')
+status_count = json.load(status_count_json_file)
+status_count_json_file.close()
 
 
-@app.route("/dados/jira/", methods=["GET"])
+@app.route("/dados/data/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def jira():
+def data():
     if request.method == "GET":
-        return jsonify(jira_data)
+        return jsonify(data_all)
 
 
-@app.route("/dados/trello/", methods=["GET"])
+@app.route("/dados/status", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def trello():
     if request.method == "GET":
-        return jsonify(trello_data)
+        return jsonify(status_count)
 
 
 if __name__ == "__main__":
