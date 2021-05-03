@@ -1,119 +1,200 @@
-import json
-import os
-from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
+from flask import Flask, jsonify, request
+import os
+from model.funcoes import *
+
 
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+cors = CORS(app, resources={r"/data/status/*": {"origins": "*"}})
+#! STATUS:
+statustotal = status('statusall')
+albu = status('albuquerque')
+bati = status('batista')
+carva = status('carvalho')
+costacom = status('costacomércio')
+costal = status('costaltda')
+mel = status('melo')
+pere = status('pereira')
+san = status('santos')
+sou = status('souza')
+xav = status('xavier')
 
-def openfile(arq):
-    json_file = open(file=f'{arq}')
-    arquivoo = json.load(json_file)
-    json_file.close()
-    return arquivoo
+#! TASKS:
+statustotalT = task('statusall')
+albuT = task('albuquerque')
+batiT = task('batista')
+carvaT = task('carvalho')
+costacomT = task('costacomércio')
+costalT = task('costaltda')
+melT = task('melo')
+pereT = task('pereira')
+sanT = task('santos')
+souT = task('souza')
+xavT = task('xavier')
 
-
-cors = CORS(app, resources={r"/data/*": {"origins": "*"}})
-
-status_all = openfile('status_count.json')
-Albuquerque = openfile(
-    './projetosStatus/status_count_[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
-Batista = openfile(
-    './projetosStatus/status_count_[Batista, Moreira and Pereira LTDA] - Monitored multi-state installation.json')
-Carvalho = openfile(
-    './projetosStatus/status_count_[Carvalho, Costa and Costa e Associados] - Ergonomic methodical methodology.json')
-Costa_Comércio = openfile(
-    './projetosStatus/status_count_[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
-Costa_LTDA = openfile(
-    './projetosStatus/status_count_[Costa LTDA S.A.] - Total asynchronous secured line.json')
-Melo = openfile(
-    './projetosStatus/status_count_[Melo, Melo and Santos e Associados] - Organized impactful instruction set.json')
-Pereira = openfile(
-    './projetosStatus/status_count_[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
-Santos = openfile(
-    './projetosStatus/status_count_[Santos - Batista Comércio] - Stand-alone well-modulated policy.json')
-Souza = openfile(
-    './projetosStatus/status_count_[Souza Comércio e Associados] - Innovative background implementation.json')
-Xavier = openfile(
-    './projetosStatus/status_count_[Xavier EIRELI S.A.] - Vision-oriented holistic architecture.json')
+#! STATUS ROTAS:
 
 
 @app.route("/data/status/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def trello():
     if request.method == "GET":
-        return jsonify(status_all)
+        return jsonify(statustotal)
 
 
-@app.route("/data/albuquerque/", methods=["GET"])
+@app.route("/data/status/albuquerque/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def albuquerque():
     if request.method == "GET":
-        return jsonify(Albuquerque)
+        return jsonify(albu)
 
 
-@app.route("/data/batista/", methods=["GET"])
+@app.route("/data/status/batista/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def batista():
     if request.method == "GET":
-        return jsonify(Batista)
+        return jsonify(bati)
 
 
-@app.route("/data/carvalho/", methods=["GET"])
+@app.route("/data/status/carvalho/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def carvalho():
     if request.method == "GET":
-        return jsonify(Carvalho)
+        return jsonify(carva)
 
 
-@app.route("/data/costacomercio/", methods=["GET"])
+@app.route("/data/status/costacomercio/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def costacomercio():
     if request.method == "GET":
-        return jsonify(Costa_Comércio)
+        return jsonify(costacom)
 
 
-@app.route("/data/costaltda/", methods=["GET"])
+@app.route("/data/status/costaltda/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def costaltda():
     if request.method == "GET":
-        return jsonify(Costa_LTDA)
+        return jsonify(costal)
 
 
-@app.route("/data/melo/", methods=["GET"])
+@app.route("/data/status/melo/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def melo():
     if request.method == "GET":
-        return jsonify(Melo)
+        return jsonify(mel)
 
 
-@app.route("/data/pereira/", methods=["GET"])
+@app.route("/data/status/pereira/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def pereira():
     if request.method == "GET":
-        return jsonify(Pereira)
+        pereira = pereira()
+        return jsonify(pere)
 
 
-@app.route("/data/santos/", methods=["GET"])
+@app.route("/data/status/santos/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def santos():
     if request.method == "GET":
-        return jsonify(Santos)
+        return jsonify(san)
 
 
-@app.route("/data/souza/", methods=["GET"])
+@app.route("/data/status/souza/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def souza():
     if request.method == "GET":
-        return jsonify(Souza)
+        return jsonify(sou)
 
 
-@app.route("/data/xavier/", methods=["GET"])
+@app.route("/data/status/xavier/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def xavier():
     if request.method == "GET":
-        return jsonify(Xavier)
+        return jsonify(xav)
+
+#?#########################################################################################################################
+
+#! TASKS ROTAS:
+
+
+@app.route("/data/task/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def task():
+    if request.method == "GET":
+        return jsonify(statustotalT)
+
+
+@app.route("/data/task/albuquerque/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def albuquerqueT():
+    if request.method == "GET":
+        return jsonify(albuT)
+
+
+@app.route("/data/task/batista/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def batistaT():
+    if request.method == "GET":
+        return jsonify(batiT)
+
+
+@app.route("/data/task/carvalho/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def carvalhoT():
+    if request.method == "GET":
+        return jsonify(carvaT)
+
+
+@app.route("/data/task/costacomercio/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def costacomercioT():
+    if request.method == "GET":
+        return jsonify(costacomT)
+
+
+@app.route("/data/task/costaltda/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def costaltdaT():
+    if request.method == "GET":
+        return jsonify(costalT)
+
+
+@app.route("/data/task/melo/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def meloT():
+    if request.method == "GET":
+        return jsonify(melT)
+
+
+@app.route("/data/task/pereira/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def pereiraT():
+    if request.method == "GET":
+        pereira = pereira()
+        return jsonify(pereT)
+
+
+@app.route("/data/task/santos/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def santosT():
+    if request.method == "GET":
+        return jsonify(sanT)
+
+
+@app.route("/data/task/souza/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def souzaT():
+    if request.method == "GET":
+        return jsonify(sou)
+
+
+@app.route("/data/task/xavier/", methods=["GET"])
+@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
+def xavierT():
+    if request.method == "GET":
+        return jsonify(xavT)
 
 
 if __name__ == "__main__":
