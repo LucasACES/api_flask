@@ -152,7 +152,7 @@ def nomesobrenome(projeto):
 def horas(projeto):
     if projeto == 'horastotal':
         horastotal = openfile(
-            './model/files/nome-sobrenome/nomeAll.json')
+            './model/files/sum-horas/horastotal.json')
         return horastotal
     elif projeto == 'albuquerque':
         Albuquerque = openfile(
