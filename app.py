@@ -34,85 +34,69 @@ sanT = task('santos')
 souT = task('souza')
 xavT = task('xavier')
 
+#! Nome e sobrenome:
+nomeall = nomesobrenome('nomeall')
+albuN = nomesobrenome('albuquerque')
+batiN = nomesobrenome('batista')
+carvaN = nomesobrenome('carvalho')
+costacomN = nomesobrenome('costacomércio')
+costalN = nomesobrenome('costaltda')
+melN = nomesobrenome('melo')
+pereN = nomesobrenome('pereira')
+sanN = nomesobrenome('santos')
+souN = nomesobrenome('souza')
+xavN = nomesobrenome('xavier')
+
+#! horas:
+horasall = horas('horastotal')
+albuH = horas('albuquerque')
+batiH = horas('batista')
+carvaH = horas('carvalho')
+costacomH = horas('costacomércio')
+costalH = horas('costaltda')
+melH = horas('melo')
+pereH = horas('pereira')
+sanH = horas('santos')
+souH = horas('souza')
+xavH = horas('xavier')
+#?#########################################################################################################################
+
 #! STATUS ROTAS:
 
 
 @app.route("/data/status/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def trello():
+def status():
     if request.method == "GET":
         return jsonify(statustotal)
 
 
-@app.route("/data/status/albuquerque/", methods=["GET"])
+@app.route("/data/status/<nome>/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def albuquerque():
+def statusbyprojeto(nome):
     if request.method == "GET":
-        return jsonify(albu)
-
-
-@app.route("/data/status/batista/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def batista():
-    if request.method == "GET":
-        return jsonify(bati)
-
-
-@app.route("/data/status/carvalho/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def carvalho():
-    if request.method == "GET":
-        return jsonify(carva)
-
-
-@app.route("/data/status/costacomercio/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def costacomercio():
-    if request.method == "GET":
-        return jsonify(costacom)
-
-
-@app.route("/data/status/costaltda/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def costaltda():
-    if request.method == "GET":
-        return jsonify(costal)
-
-
-@app.route("/data/status/melo/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def melo():
-    if request.method == "GET":
-        return jsonify(mel)
-
-
-@app.route("/data/status/pereira/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def pereira():
-    if request.method == "GET":
-        pereira = pereira()
-        return jsonify(pere)
-
-
-@app.route("/data/status/santos/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def santos():
-    if request.method == "GET":
-        return jsonify(san)
-
-
-@app.route("/data/status/souza/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def souza():
-    if request.method == "GET":
-        return jsonify(sou)
-
-
-@app.route("/data/status/xavier/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def xavier():
-    if request.method == "GET":
-        return jsonify(xav)
+        if nome == 'albuquerque':
+            return jsonify(albu)
+        elif nome == 'batista':
+            return jsonify(bati)
+        elif nome == 'carvalho':
+            return jsonify(carva)
+        elif nome == 'costacomercio':
+            return jsonify(costacom)
+        elif nome == 'costaltda':
+            return jsonify(costal)
+        elif nome == 'melo':
+            return jsonify(mel)
+        elif nome == 'pereira':
+            return jsonify(pere)
+        elif nome == 'santos':
+            return jsonify(san)
+        elif nome == 'souza':
+            return jsonify(sou)
+        elif nome == 'xavier':
+            return jsonify(xav)
+        else:
+            return "digite um projeto válido"
 
 #?#########################################################################################################################
 
@@ -123,78 +107,113 @@ def xavier():
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def task():
     if request.method == "GET":
-        return jsonify(statustotalT)
+        return jsonify(statustotalN)
 
 
-@app.route("/data/task/albuquerque/", methods=["GET"])
+@app.route("/data/task/<nome>/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def albuquerqueT():
+def taskbyprojeto(nome):
     if request.method == "GET":
-        return jsonify(albuT)
+        if nome == 'albuquerque':
+            return jsonify(albuT)
+        elif nome == 'batista':
+            return jsonify(batiT)
+        elif nome == 'carvalho':
+            return jsonify(carvaT)
+        elif nome == 'costacomercio':
+            return jsonify(costacomT)
+        elif nome == 'costaltda':
+            return jsonify(costalT)
+        elif nome == 'melo':
+            return jsonify(melT)
+        elif nome == 'pereira':
+            return jsonify(pereT)
+        elif nome == 'santos':
+            return jsonify(sanT)
+        elif nome == 'souza':
+            return jsonify(souT)
+        elif nome == 'xavier':
+            return jsonify(xavT)
+        else:
+            return "digite um projeto válido"
+
+#?#########################################################################################################################
+
+#! NOME ROTAS:
 
 
-@app.route("/data/task/batista/", methods=["GET"])
+@app.route("/data/nome/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def batistaT():
+def nome():
     if request.method == "GET":
-        return jsonify(batiT)
+        return jsonify(nomeall)
 
 
-@app.route("/data/task/carvalho/", methods=["GET"])
+@app.route("/data/nome/<nome>/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def carvalhoT():
+def nomebyprojeto(nome):
     if request.method == "GET":
-        return jsonify(carvaT)
+        if nome == 'albuquerque':
+            return jsonify(albuN)
+        elif nome == 'batista':
+            return jsonify(batiN)
+        elif nome == 'carvalho':
+            return jsonify(carvaN)
+        elif nome == 'costacomercio':
+            return jsonify(costacomN)
+        elif nome == 'costaltda':
+            return jsonify(costalN)
+        elif nome == 'melo':
+            return jsonify(melN)
+        elif nome == 'pereira':
+            return jsonify(pereN)
+        elif nome == 'santos':
+            return jsonify(sanN)
+        elif nome == 'souza':
+            return jsonify(souN)
+        elif nome == 'xavier':
+            return jsonify(xavN)
+        else:
+            return "digite um projeto válido"
+
+#?#########################################################################################################################
+
+#! NOME ROTAS:
 
 
-@app.route("/data/task/costacomercio/", methods=["GET"])
+@app.route("/data/horas/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def costacomercioT():
+def horas():
     if request.method == "GET":
-        return jsonify(costacomT)
+        return jsonify(horasall)
 
 
-@app.route("/data/task/costaltda/", methods=["GET"])
+@app.route("/data/horas/<nome>/", methods=["GET"])
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def costaltdaT():
+def horasbyprojeto(nome):
     if request.method == "GET":
-        return jsonify(costalT)
-
-
-@app.route("/data/task/melo/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def meloT():
-    if request.method == "GET":
-        return jsonify(melT)
-
-
-@app.route("/data/task/pereira/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def pereiraT():
-    if request.method == "GET":
-        pereira = pereira()
-        return jsonify(pereT)
-
-
-@app.route("/data/task/santos/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def santosT():
-    if request.method == "GET":
-        return jsonify(sanT)
-
-
-@app.route("/data/task/souza/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def souzaT():
-    if request.method == "GET":
-        return jsonify(sou)
-
-
-@app.route("/data/task/xavier/", methods=["GET"])
-@cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
-def xavierT():
-    if request.method == "GET":
-        return jsonify(xavT)
+        if nome == 'albuquerque':
+            return jsonify(albuH)
+        elif nome == 'batista':
+            return jsonify(batiH)
+        elif nome == 'carvalho':
+            return jsonify(carvaH)
+        elif nome == 'costacomercio':
+            return jsonify(costacomH)
+        elif nome == 'costaltda':
+            return jsonify(costalH)
+        elif nome == 'melo':
+            return jsonify(melH)
+        elif nome == 'pereira':
+            return jsonify(pereH)
+        elif nome == 'santos':
+            return jsonify(sanH)
+        elif nome == 'souza':
+            return jsonify(souH)
+        elif nome == 'xavier':
+            return jsonify(xavH)
+        else:
+            return "digite um projeto válido"
 
 
 if __name__ == "__main__":
