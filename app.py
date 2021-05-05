@@ -107,7 +107,7 @@ def statusbyprojeto(nome):
 @cross_origin(origin='*', headers=['Content- Type', 'Authorization'])
 def task():
     if request.method == "GET":
-        return jsonify(statustotalN)
+        return jsonify(statustotalT)
 
 
 @app.route("/data/task/<nome>/", methods=["GET"])
