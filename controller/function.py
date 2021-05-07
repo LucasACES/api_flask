@@ -1,0 +1,148 @@
+from model.funcoes import *
+
+#! STATUS:
+statustotal = status('statusall')
+albu = status('albuquerque')
+bati = status('batista')
+carva = status('carvalho')
+costacom = status('costacomércio')
+costal = status('costaltda')
+mel = status('melo')
+pere = status('pereira')
+san = status('santos')
+sou = status('souza')
+xav = status('xavier')
+
+#! TASKS:
+statustotalT = task('statusall')
+albuT = task('albuquerque')
+batiT = task('batista')
+carvaT = task('carvalho')
+costacomT = task('costacomércio')
+costalT = task('costaltda')
+melT = task('melo')
+pereT = task('pereira')
+sanT = task('santos')
+souT = task('souza')
+xavT = task('xavier')
+
+#! Nome e sobrenome:
+nomeall = nomesobrenome('nomeall')
+albuN = nomesobrenome('albuquerque')
+batiN = nomesobrenome('batista')
+carvaN = nomesobrenome('carvalho')
+costacomN = nomesobrenome('costacomércio')
+costalN = nomesobrenome('costaltda')
+melN = nomesobrenome('melo')
+pereN = nomesobrenome('pereira')
+sanN = nomesobrenome('santos')
+souN = nomesobrenome('souza')
+xavN = nomesobrenome('xavier')
+
+#! horas:
+horasall = horas('horastotal')
+albuH = horas('albuquerque')
+batiH = horas('batista')
+carvaH = horas('carvalho')
+costacomH = horas('costacomércio')
+costalH = horas('costaltda')
+melH = horas('melo')
+pereH = horas('pereira')
+sanH = horas('santos')
+souH = horas('souza')
+xavH = horas('xavier')
+
+
+def projet(opcao, nome):
+    if opcao and nome:
+        if opcao == 'status' and nome == 'albuquerque':
+            return jsonify(albu)
+        elif opcao == 'status' and nome == 'batista':
+            return jsonify(bati)
+        elif opcao == 'status' and nome == 'carvalho':
+            return jsonify(carva)
+        elif opcao == 'status' and nome == 'costacomercio':
+            return jsonify(costacom)
+        elif opcao == 'status' and nome == 'costaltda':
+            return jsonify(costal)
+        elif opcao == 'status' and nome == 'melo':
+            return jsonify(mel)
+        elif opcao == 'status' and nome == 'pereira':
+            return jsonify(pere)
+        elif opcao == 'status' and nome == 'santos':
+            return jsonify(san)
+        elif opcao == 'status' and nome == 'souza':
+            return jsonify(sou)
+        elif opcao == 'status' and nome == 'xavier':
+            return jsonify(xav)
+        elif opcao == 'task' and nome == 'albuquerque':
+            return jsonify(albuT)
+        elif opcao == 'task' and nome == 'batista':
+            return jsonify(batiT)
+        elif opcao == 'task' and nome == 'carvalho':
+            return jsonify(carvaT)
+        elif opcao == 'task' and nome == 'costacomercio':
+            return jsonify(costacomT)
+        elif opcao == 'task' and nome == 'costaltda':
+            return jsonify(costalT)
+        elif opcao == 'task' and nome == 'melo':
+            return jsonify(melT)
+        elif opcao == 'task' and nome == 'pereira':
+            return jsonify(pereT)
+        elif opcao == 'task' and nome == 'santos':
+            return jsonify(sanT)
+        elif opcao == 'task' and nome == 'souza':
+            return jsonify(souT)
+        elif opcao == 'task' and nome == 'xavier':
+            return jsonify(xavT)
+        elif opcao == 'horas' and nome == 'albuquerque':
+            return jsonify(albuH)
+        elif opcao == 'horas' and nome == 'batista':
+            return jsonify(batiH)
+        elif opcao == 'horas' and nome == 'carvalho':
+            return jsonify(carvaH)
+        elif opcao == 'horas' and nome == 'costacomercio':
+            return jsonify(costacomH)
+        elif opcao == 'horas' and nome == 'costaltda':
+            return jsonify(costalH)
+        elif opcao == 'horas' and nome == 'melo':
+            return jsonify(melH)
+        elif opcao == 'horas' and nome == 'pereira':
+            return jsonify(pereH)
+        elif opcao == 'horas' and nome == 'santos':
+            return jsonify(sanH)
+        elif opcao == 'horas' and nome == 'souza':
+            return jsonify(souH)
+        elif opcao == 'horas' and nome == 'xavier':
+            return jsonify(xavH)
+        elif opcao == 'nome' and nome == 'albuquerque':
+            return jsonify(albuN)
+        elif opcao == 'nome' and nome == 'batista':
+            return jsonify(batiN)
+        elif opcao == 'nome' and nome == 'carvalho':
+            return jsonify(carvaN)
+        elif opcao == 'nome' and nome == 'costacomercio':
+            return jsonify(costacomN)
+        elif opcao == 'nome' and nome == 'costaltda':
+            return jsonify(costalN)
+        elif opcao == 'nome' and nome == 'melo':
+            return jsonify(melN)
+        elif opcao == 'nome' and nome == 'pereira':
+            return jsonify(pereN)
+        elif opcao == 'nome' and nome == 'santos':
+            return jsonify(sanN)
+        elif opcao == 'nome' and nome == 'souza':
+            return jsonify(souN)
+        elif opcao == 'nome' and nome == 'xavier':
+            return jsonify(xavN)
+        else:
+            return "digite um projeto válido"
+    elif opcao:
+        if opcao == 'status':
+            return jsonify(statustotal)
+        elif opcao == 'task':
+            return jsonify(statustotalT)
+        elif opcao == 'horas':
+            return jsonify(horasall)
+        elif opcao == 'nome':
+            return jsonify(nomeall)
