@@ -15,7 +15,7 @@ def status(projeto):
         return status_all
     elif projeto == 'albuquerque':
         Albuquerque = openfile(
-            './model/files/statusCountProject/status_count_[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
+            './model/files/statusCountProject/status_count_[Albuquerque, Albuquerque and Carvalho Comercio] - Mandatory human-resource open architecture.json')
         return Albuquerque
     elif projeto == 'batista':
         Batista = openfile(
@@ -27,7 +27,7 @@ def status(projeto):
         return Carvalho
     elif projeto == 'costacomercio':
         Costa_Comercio = openfile(
-            './model/files/statusCountProject/status_count_[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
+            './model/files/statusCountProject/status_count_[Costa Comercio Comercio] - Sharable non-volatile internet solution.json')
         return Costa_Comercio
     elif projeto == 'costaltda':
         Costa_LTDA = openfile(
@@ -39,15 +39,15 @@ def status(projeto):
         return Melo
     elif projeto == 'pereira':
         Pereira = openfile(
-            './model/files/statusCountProject/status_count_[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
+            './model/files/statusCountProject/status_count_[Pereira - Barros Comercio] - Mandatory fault-tolerant Graphical User Interface.json')
         return Pereira
     elif projeto == 'santos':
-        a = './model/files/statusCountProject/status_count_[Santos - Batista Comércio] - Stand-alone well-modulated policy.json'
+        a = './model/files/statusCountProject/status_count_[Santos - Batista Comercio] - Stand-alone well-modulated policy.json'
         Santos = openfile(a)
         return Santos
     elif projeto == 'souza':
         Souza = openfile(
-            './model/files/statusCountProject/status_count_[Souza Comércio e Associados] - Innovative background implementation.json')
+            './model/files/statusCountProject/status_count_[Souza Comercio e Associados] - Innovative background implementation.json')
         return Souza
     elif projeto == 'xavier':
         Xavier = openfile(
@@ -62,7 +62,7 @@ def task(projeto):
         return status_all
     elif projeto == 'albuquerque':
         Albuquerque = openfile(
-            './model/files/taskFinishedProject/taskfinished[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
+            './model/files/taskFinishedProject/taskfinished[Albuquerque, Albuquerque and Carvalho Comercio] - Mandatory human-resource open architecture.json')
         return Albuquerque
     elif projeto == 'batista':
         Batista = openfile(
@@ -74,7 +74,7 @@ def task(projeto):
         return Carvalho
     elif projeto == 'costacomercio':
         Costa_Comercio = openfile(
-            './model/files/taskFinishedProject/taskfinished[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
+            './model/files/taskFinishedProject/taskfinished[Costa Comercio Comercio] - Sharable non-volatile internet solution.json')
         return Costa_Comercio
     elif projeto == 'costaltda':
         Costa_LTDA = openfile(
@@ -86,15 +86,15 @@ def task(projeto):
         return Melo
     elif projeto == 'pereira':
         Pereira = openfile(
-            './model/files/taskFinishedProject/taskfinished[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
+            './model/files/taskFinishedProject/taskfinished[Pereira - Barros Comercio] - Mandatory fault-tolerant Graphical User Interface.json')
         return Pereira
     elif projeto == 'santos':
-        a = './model/files/taskFinishedProject/taskfinished[Santos - Batista Comércio] - Stand-alone well-modulated policy.json'
+        a = './model/files/taskFinishedProject/taskfinished[Santos - Batista Comercio] - Stand-alone well-modulated policy.json'
         Santos = openfile(a)
         return Santos
     elif projeto == 'souza':
         Souza = openfile(
-            './model/files/taskFinishedProject/taskfinished[Souza Comércio e Associados] - Innovative background implementation.json')
+            './model/files/taskFinishedProject/taskfinished[Souza Comercio e Associados] - Innovative background implementation.json')
         return Souza
     elif projeto == 'xavier':
         Xavier = openfile(
@@ -109,7 +109,7 @@ def nomesobrenome(projeto):
         return nomeall
     elif projeto == 'albuquerque':
         Albuquerque = openfile(
-            './model/files/nome-sobrenome-projeto/[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
+            './model/files/nome-sobrenome-projeto/[Albuquerque, Albuquerque and Carvalho Comercio] - Mandatory human-resource open architecture.json')
         return Albuquerque
     elif projeto == 'batista':
         Batista = openfile(
@@ -121,7 +121,7 @@ def nomesobrenome(projeto):
         return Carvalho
     elif projeto == 'costacomercio':
         Costa_Comercio = openfile(
-            './model/files/nome-sobrenome-projeto/[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
+            './model/files/nome-sobrenome-projeto/[Costa Comercio Comercio] - Sharable non-volatile internet solution.json')
         return Costa_Comercio
     elif projeto == 'costaltda':
         Costa_LTDA = openfile(
@@ -133,15 +133,15 @@ def nomesobrenome(projeto):
         return Melo
     elif projeto == 'pereira':
         Pereira = openfile(
-            './model/files/nome-sobrenome-projeto/[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
+            './model/files/nome-sobrenome-projeto/[Pereira - Barros Comercio] - Mandatory fault-tolerant Graphical User Interface.json')
         return Pereira
     elif projeto == 'santos':
-        a = './model/files/nome-sobrenome-projeto/[Santos - Batista Comércio] - Stand-alone well-modulated policy.json'
+        a = './model/files/nome-sobrenome-projeto/[Santos - Batista Comercio] - Stand-alone well-modulated policy.json'
         Santos = openfile(a)
         return Santos
     elif projeto == 'souza':
         Souza = openfile(
-            './model/files/nome-sobrenome-projeto/[Souza Comércio e Associados] - Innovative background implementation.json')
+            './model/files/nome-sobrenome-projeto/[Souza Comercio e Associados] - Innovative background implementation.json')
         return Souza
     elif projeto == 'xavier':
         Xavier = openfile(
@@ -156,7 +156,7 @@ def horas(projeto):
         return horastotal
     elif projeto == 'albuquerque':
         Albuquerque = openfile(
-            './model/files/horas-por-projeto/horas_projeto_[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
+            './model/files/horas-por-projeto/horas_projeto_[Albuquerque, Albuquerque and Carvalho Comercio] - Mandatory human-resource open architecture.json')
         return Albuquerque
     elif projeto == 'batista':
         Batista = openfile(
@@ -168,7 +168,7 @@ def horas(projeto):
         return Carvalho
     elif projeto == 'costacomercio':
         Costa_Comercio = openfile(
-            './model/files/horas-por-projeto/horas_projeto_[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
+            './model/files/horas-por-projeto/horas_projeto_[Costa Comercio Comercio] - Sharable non-volatile internet solution.json')
         return Costa_Comercio
     elif projeto == 'costaltda':
         Costa_LTDA = openfile(
@@ -180,15 +180,15 @@ def horas(projeto):
         return Melo
     elif projeto == 'pereira':
         Pereira = openfile(
-            './model/files/horas-por-projeto/horas_projeto_[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
+            './model/files/horas-por-projeto/horas_projeto_[Pereira - Barros Comercio] - Mandatory fault-tolerant Graphical User Interface.json')
         return Pereira
     elif projeto == 'santos':
-        a = './model/files/horas-por-projeto/horas_projeto_[Santos - Batista Comércio] - Stand-alone well-modulated policy.json'
+        a = './model/files/horas-por-projeto/horas_projeto_[Santos - Batista Comercio] - Stand-alone well-modulated policy.json'
         Santos = openfile(a)
         return Santos
     elif projeto == 'souza':
         Souza = openfile(
-            './model/files/horas-por-projeto/horas_projeto_[Souza Comércio e Associados] - Innovative background implementation.json')
+            './model/files/horas-por-projeto/horas_projeto_[Souza Comercio e Associados] - Innovative background implementation.json')
         return Souza
     elif projeto == 'xavier':
         Xavier = openfile(
@@ -202,7 +202,7 @@ def mediahras(projeto):
         return mediahoras
     elif projeto == 'albuquerque':
         Albuquerque = openfile(
-            './model/files/media-horas-por-projeto/media_horas_projeto_[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Albuquerque, Albuquerque and Carvalho Comercio] - Mandatory human-resource open architecture.json')
         return Albuquerque
     elif projeto == 'batista':
         Batista = openfile(
@@ -214,7 +214,7 @@ def mediahras(projeto):
         return Carvalho
     elif projeto == 'costacomercio':
         Costa_Comercio = openfile(
-            './model/files/media-horas-por-projeto/media_horas_projeto_[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Costa Comercio Comercio] - Sharable non-volatile internet solution.json')
         return Costa_Comercio
     elif projeto == 'costaltda':
         Costa_LTDA = openfile(
@@ -226,15 +226,15 @@ def mediahras(projeto):
         return Melo
     elif projeto == 'pereira':
         Pereira = openfile(
-            './model/files/media-horas-por-projeto/media_horas_projeto_[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Pereira - Barros Comercio] - Mandatory fault-tolerant Graphical User Interface.json')
         return Pereira
     elif projeto == 'santos':
-        a = './model/files/media-horas-por-projeto/media_horas_projeto_[Santos - Batista Comércio] - Stand-alone well-modulated policy.json'
+        a = './model/files/media-horas-por-projeto/media_horas_projeto_[Santos - Batista Comercio] - Stand-alone well-modulated policy.json'
         Santos = openfile(a)
         return Santos
     elif projeto == 'souza':
         Souza = openfile(
-            './model/files/media-horas-por-projeto/media_horas_projeto_[Souza Comércio e Associados] - Innovative background implementation.json')
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Souza Comercio e Associados] - Innovative background implementation.json')
         return Souza
     elif projeto == 'xavier':
         Xavier = openfile(
