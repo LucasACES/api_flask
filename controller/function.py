@@ -52,6 +52,18 @@ sanH = horas('santos')
 souH = horas('souza')
 xavH = horas('xavier')
 
+#mediahoras:
+mediatotal = mediahras('mediahoras')
+albuMH = mediahras('albuquerque')
+batiMH = mediahras('batista')
+carvaMH = mediahras('carvalho')
+costacomMH = mediahras('costacomercio')
+costalMH = mediahras('costaltda')
+melMH = mediahras('melo')
+pereMH = mediahras('pereira')
+sanMH = mediahras('santos')
+souMH = mediahras('souza')
+xavMH = mediahras('xavier')
 
 def projet(opcao, nome):
     if opcao and nome:
@@ -135,6 +147,26 @@ def projet(opcao, nome):
             return jsonify(souN)
         elif opcao == 'nome' and nome == 'xavier':
             return jsonify(xavN)
+        elif opcao == 'mediahoras' and nome == 'albuquerque':
+            return jsonify(albuMH)
+        elif opcao == 'mediahoras' and nome == 'batista':
+            return jsonify(batiMH)
+        elif opcao == 'mediahoras' and nome == 'carvalho':
+            return jsonify(carvaMH)
+        elif opcao == 'mediahoras' and nome == 'costacomercio':
+            return jsonify(costacomMH)
+        elif opcao == 'mediahoras' and nome == 'costaltda':
+            return jsonify(costalMH)
+        elif opcao == 'mediahoras' and nome == 'melo':
+            return jsonify(melMH)
+        elif opcao == 'mediahoras' and nome == 'pereira':
+            return jsonify(pereMH)
+        elif opcao == 'mediahoras' and nome == 'santos':
+            return jsonify(sanMH)
+        elif opcao == 'mediahoras' and nome == 'souza':
+            return jsonify(souMH)
+        elif opcao == 'mediahoras' and nome == 'xavier':
+            return jsonify(xavMH)
         else:
             return "digite um projeto válido"
     elif opcao:
@@ -146,3 +178,5 @@ def projet(opcao, nome):
             return jsonify(horasall)
         elif opcao == 'nome':
             return jsonify(nomeall)
+        elif opcao == 'mediahoras':
+            return jsonify(mediatotal)

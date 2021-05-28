@@ -194,3 +194,49 @@ def horas(projeto):
         Xavier = openfile(
             './model/files/horas-por-projeto/horas_projeto_[Xavier EIRELI S.A.] - Vision-oriented holistic architecture.json')
         return Xavier
+
+def mediahras(projeto):
+    if projeto == 'mediahoras':
+        mediahoras = openfile(
+            './model/files/media-sum-horas/media_horas_total.json')
+        return mediahoras
+    elif projeto == 'albuquerque':
+        Albuquerque = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Albuquerque, Albuquerque and Carvalho Comércio] - Mandatory human-resource open architecture.json')
+        return Albuquerque
+    elif projeto == 'batista':
+        Batista = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Batista, Moreira and Pereira LTDA] - Monitored multi-state installation.json')
+        return Batista
+    elif projeto == 'carvalho':
+        Carvalho = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Carvalho, Costa and Costa e Associados] - Ergonomic methodical methodology.json')
+        return Carvalho
+    elif projeto == 'costacomercio':
+        Costa_Comercio = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Costa Comércio Comércio] - Sharable non-volatile internet solution.json')
+        return Costa_Comercio
+    elif projeto == 'costaltda':
+        Costa_LTDA = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Costa LTDA S.A.] - Total asynchronous secured line.json')
+        return Costa_LTDA
+    elif projeto == 'melo':
+        Melo = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Melo, Melo and Santos e Associados] - Organized impactful instruction set.json')
+        return Melo
+    elif projeto == 'pereira':
+        Pereira = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Pereira - Barros Comércio] - Mandatory fault-tolerant Graphical User Interface.json')
+        return Pereira
+    elif projeto == 'santos':
+        a = './model/files/media-horas-por-projeto/media_horas_projeto_[Santos - Batista Comércio] - Stand-alone well-modulated policy.json'
+        Santos = openfile(a)
+        return Santos
+    elif projeto == 'souza':
+        Souza = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Souza Comércio e Associados] - Innovative background implementation.json')
+        return Souza
+    elif projeto == 'xavier':
+        Xavier = openfile(
+            './model/files/media-horas-por-projeto/media_horas_projeto_[Xavier EIRELI S.A.] - Vision-oriented holistic architecture.json')
+        return Xavier
