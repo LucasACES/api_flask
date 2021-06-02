@@ -65,6 +65,49 @@ sanMH = mediahras('santos')
 souMH = mediahras('souza')
 xavMH = mediahras('xavier')
 
+#horascolaborador
+anajuliaH = horascolaborador('anajulia')
+antonionogueiraH = horascolaborador('antonionogueira')
+bernardosouzaH = horascolaborador('bernardosouza')
+carlosbatistaH = horascolaborador('carlosbatista')
+ceciliamoreiraH = horascolaborador('.ceciliamoreira')
+davibatistaH = horascolaborador('davibatista')
+elisioalbuquerqueH = horascolaborador('elisioalbuquerque')
+elisiomartinsH = horascolaborador('elisiomartins')
+enzogabrielH = horascolaborador('enzogabriel')
+fabiosouzaH = horascolaborador('fabiosouza')
+gabrielpereiraH = horascolaborador('gabrielpereira')
+gustavosantosH = horascolaborador('gustavosantos')
+kleberoliveiraH = horascolaborador('kleberoliveira')
+luccameloH = horascolaborador('luccamelo')
+matheusbarrosH = horascolaborador('matheusbarros')
+pablomartinsH = horascolaborador('pablomartins')
+rafaelxavierH = horascolaborador('rafaelxavier')
+talitabragaH = horascolaborador('talitabraga')
+vicentemoraesH = horascolaborador('vicentemoraes')
+
+#taskcolaborador
+anajuliaT = taskcolaborador('anajulia')
+antonionogueiraT = taskcolaborador('antonionogueira')
+bernardosouzaT = taskcolaborador('bernardosouza')
+carlosbatistaT = taskcolaborador('carlosbatista')
+ceciliamoreiraT = taskcolaborador('.ceciliamoreira')
+davibatistaT = taskcolaborador('davibatista')
+elisioalbuquerqueT = taskcolaborador('elisioalbuquerque')
+elisiomartinsT = taskcolaborador('elisiomartins')
+enzogabrielT = taskcolaborador('enzogabriel')
+fabiosouzaT = taskcolaborador('fabiosouza')
+gabrielpereiraT= taskcolaborador('gabrielpereira')
+gustavosantosT = taskcolaborador('gustavosantos')
+kleberoliveiraT = taskcolaborador('kleberoliveira')
+luccameloT = taskcolaborador('luccamelo')
+matheusbarrosT = taskcolaborador('matheusbarros')
+pablomartinsT = taskcolaborador('pablomartins')
+rafaelxavierT = taskcolaborador('rafaelxavier')
+talitabragaT = taskcolaborador('talitabraga')
+vicentemoraesT = taskcolaborador('vicentemoraes')
+
+
 def projet(opcao, nome):
     if opcao and nome:
         if opcao == 'status' and nome == 'albuquerque':
@@ -167,6 +210,92 @@ def projet(opcao, nome):
             return jsonify(souMH)
         elif opcao == 'mediahoras' and nome == 'xavier':
             return jsonify(xavMH)
+        elif opcao == 'taskcolaborador' and nome == 'anajulia':
+            return jsonify(anajuliaT)
+        elif opcao == 'taskcolaborador' and nome == 'antonionogueira':
+            return jsonify(antonionogueiraT)
+        elif opcao == 'taskcolaborador' and nome == 'bernardosouza':
+            return jsonify(bernardosouzaT)
+        elif opcao == 'taskcolaborador' and nome == 'carlosbatista':
+            return jsonify(carlosbatistaT)
+        elif opcao == 'taskcolaborador' and nome == 'ceciliamoreira':
+            return jsonify(ceciliamoreiraT)
+        elif opcao == 'taskcolaborador' and nome == 'davibatista':
+            return jsonify(davibatistaT)
+        elif opcao == 'taskcolaborador' and nome == 'elisioalbuquerque':
+            return jsonify(elisioalbuquerqueT)
+        elif opcao == 'taskcolaborador' and nome == 'elisiomartins':
+            return jsonify(elisiomartinsT)
+        elif opcao == 'taskcolaborador' and nome == 'enzogabriel':
+            return jsonify(enzogabrielT)
+        elif opcao == 'taskcolaborador' and nome == 'fabiosouza':
+            return jsonify(fabiosouzaT)
+        elif opcao == 'taskcolaborador' and nome == 'gabrielpereira':
+            return jsonify(gabrielpereiraT)
+        elif opcao == 'taskcolaborador' and nome == 'gustavosantos':
+            return jsonify(gustavosantosT)
+        elif opcao == 'taskcolaborador' and nome == 'kleberoliveira':
+            return jsonify(kleberoliveiraT)
+        elif opcao == 'taskcolaborador' and nome == 'luccamelo':
+            return jsonify(luccameloT)
+        elif opcao == 'taskcolaborador' and nome == 'matheusbarros':
+            return jsonify(matheusbarrosT)
+        elif opcao == 'taskcolaborador' and nome == 'pablomartins':
+            return jsonify(pablomartinsT)
+        elif opcao == 'taskcolaborador' and nome == 'rafaelxavier':
+            return jsonify(rafaelxavierT)
+        elif opcao == 'taskcolaborador' and nome == 'talitabraga':
+            return jsonify(talitabragaT)
+        elif opcao == 'taskcolaborador' and nome == 'vicentemoraes':
+            return jsonify(vicentemoraesT)
+        elif opcao == 'horascolaborador' and nome == 'anajulia':
+            return jsonify(anajuliaH)
+        elif opcao == 'horascolaborador' and nome == 'antonionogueira':
+            return jsonify(antonionogueiraH)
+        elif opcao == 'horascolaborador' and nome == 'bernardosouza':
+            return jsonify(bernardosouzaH)
+        elif opcao == 'horascolaborador' and nome == 'carlosbatista':
+            return jsonify(carlosbatistaH)
+        elif opcao == 'horascolaborador' and nome == 'ceciliamoreira':
+            return jsonify(ceciliamoreiraH)
+        elif opcao == 'horascolaborador' and nome == 'davibatista':
+            return jsonify(davibatistaH)
+        elif opcao == 'horascolaborador' and nome == 'elisioalbuquerque':
+            return jsonify(elisioalbuquerqueH)
+        elif opcao == 'horascolaborador' and nome == 'elisiomartins':
+            return jsonify(elisiomartinsH)
+        elif opcao == 'horascolaborador' and nome == 'enzogabriel':
+            return jsonify(enzogabrielH)
+        elif opcao == 'horascolaborador' and nome == 'fabiosouza':
+            return jsonify(fabiosouzaH)
+        elif opcao == 'horascolaborador' and nome == 'gabrielpereira':
+            return jsonify(gabrielpereiraH)
+        elif opcao == 'horascolaborador' and nome == 'gustavosantos':
+            return jsonify(gustavosantosH)
+        elif opcao == 'horascolaborador' and nome == 'kleberoliveira':
+            return jsonify(kleberoliveiraH)
+        elif opcao == 'horascolaborador' and nome == 'luccamelo':
+            return jsonify(luccameloH)
+        elif opcao == 'horascolaborador' and nome == 'matheusbarros':
+            return jsonify(matheusbarrosH)
+        elif opcao == 'horascolaborador' and nome == 'pablomartins':
+            return jsonify(pablomartinsH)
+        elif opcao == 'horascolaborador' and nome == 'rafaelxavier':
+            return jsonify(rafaelxavierH)
+        elif opcao == 'horascolaborador' and nome == 'talitabraga':
+            return jsonify(talitabragaH)
+        elif opcao == 'horascolaborador' and nome == 'vicentemoraes':
+            return jsonify(vicentemoraesH)
+
+
+
+
+
+
+
+
+
+
         else:
             return "digite um projeto válido"
     elif opcao:

@@ -240,3 +240,123 @@ def mediahras(projeto):
         Xavier = openfile(
             './model/files/media-horas-por-projeto/media_horas_projeto_[Xavier EIRELI S.A.] - Vision-oriented holistic architecture.json')
         return Xavier
+
+
+def taskcolaborador (projeto):
+    if projeto == "anajulia":
+        anajulia = openfile('./model/files/tasks-por-colaborador/Ana Julia_Franco.json')
+        return anajulia
+    elif projeto == "antonionogueira":
+        antonionogueira = openfile('./model/files/tasks-por-colaborador/Antonio_Nogueira.json')
+        return antonionogueira
+    elif projeto == "bernardosouza":
+        bernardosouza = openfile('./model/files/tasks-por-colaborador/Bernardo_Souza.json')
+        return bernardosouza
+    elif projeto == "carlosbatista":
+        carlosbatista = openfile('./model/files/tasks-por-colaborador/Carlos_Batista.json')
+        return carlosbatista
+    elif projeto == "ceciliamoreira":
+        ceciliamoreira = openfile('./model/files/tasks-por-colaborador/Cecilia_Moreira.json')
+        return ceciliamoreira
+    elif projeto == "davibatista":
+        davibatista = openfile('./model/files/tasks-por-colaborador/Davi_Batista.json')
+        return davibatista
+    elif projeto == "elisioalbuquerque":
+        elisioalbuquerque = openfile('./model/files/tasks-por-colaborador/Elisio_Albuquerque.json')
+        return elisioalbuquerque
+    elif projeto == "elisiomartins":
+        elisiomartins = openfile('./model/files/tasks-por-colaborador/Elisio_Martins.json')
+        return elisiomartins
+    elif projeto == "enzogabriel":
+        enzogabriel = openfile('./model/files/tasks-por-colaborador/Enzo Gabriel_Saraiva.json')
+        return enzogabriel
+    elif projeto == "fabiosouza":
+        fabiosouza = openfile('./model/files/tasks-por-colaborador/Fabio_Souza.json')
+        return fabiosouza
+    elif projeto == "gabrielpereira":
+        gabrielpereira = openfile('./model/files/tasks-por-colaborador/Gabriel_Pereira.json')
+        return gabrielpereira
+    elif projeto == "gustavosantos":
+        gustavosantos = openfile('./model/files/tasks-por-colaborador/Gustavo_Santos.json')
+        return gustavosantos
+    elif projeto == "kleberoliveira":
+        kleberoliveira = openfile('./model/files/tasks-por-colaborador/Kleber_Oliveira.json')
+        return kleberoliveira
+    elif projeto == "luccamelo":
+        luccamelo = openfile('./model/files/tasks-por-colaborador/Lucca_Melo.json')
+        return luccamelo
+    elif projeto == "matheusbarros":
+        matheusbarros = openfile('./model/files/tasks-por-colaborador/Matheus_Barros.json')
+        return matheusbarros
+    elif projeto == "pablomartins":
+        pablomartins = openfile('./model/files/tasks-por-colaborador/Pablo_Martins.json')
+        return pablomartins
+    elif projeto == "rafaelxavier":
+        rafaelxavier = openfile('./model/files/tasks-por-colaborador/Rafael_Xavier.json')
+        return rafaelxavier
+    elif projeto == "talitabraga":
+        talitabraga = openfile('./model/files/tasks-por-colaborador/Talita_Braga.json')
+        return talitabraga
+    elif projeto == "vicentemoraes":
+        vicentemoraes = openfile('./model/files/tasks-por-colaborador/Vicente_Moraes.json')
+        return vicentemoraes
+
+
+def horascolaborador (projeto):
+        if projeto == "anajulia":
+            anajulia = openfile('./model/files/horas-por-colaborador/Ana Julia_Franco.json')
+            return anajulia
+        elif projeto == "antonionogueira":
+            antonionogueira = openfile('./model/files/horas-por-colaborador/Antonio_Nogueira.json')
+            return antonionogueira
+        elif projeto == "bernardosouza":
+            bernardosouza = openfile('./model/files/horas-por-colaborador/Bernardo_Souza.json')
+            return bernardosouza
+        elif projeto == "carlosbatista":
+            carlosbatista = openfile('./model/files/horas-por-colaborador/Carlos_Batista.json')
+            return carlosbatista
+        elif projeto == "ceciliamoreira":
+            ceciliamoreira = openfile('./model/files/horas-por-colaborador/Cecilia_Moreira.json')
+            return ceciliamoreira
+        elif projeto == "davibatista":
+            davibatista = openfile('./model/files/horas-por-colaborador/Davi_Batista.json')
+            return davibatista
+        elif projeto == "elisioalbuquerque":
+            elisioalbuquerque = openfile('./model/files/horas-por-colaborador/Elisio_Albuquerque.json')
+            return elisioalbuquerque
+        elif projeto == "elisiomartins":
+            elisiomartins = openfile('./model/files/horas-por-colaborador/Elisio_Martins.json')
+            return elisiomartins
+        elif projeto == "enzogabriel":
+            enzogabriel = openfile('./model/files/horas-por-colaborador/Enzo Gabriel_Saraiva.json')
+            return enzogabriel
+        elif projeto == "fabiosouza":
+            fabiosouza = openfile('./model/files/horas-por-colaborador/Fabio_Souza.json')
+            return fabiosouza
+        elif projeto == "gabrielpereira":
+            gabrielpereira = openfile('./model/files/horas-por-colaborador/Gabriel_Pereira.json')
+            return gabrielpereira
+        elif projeto == "gustavosantos":
+            gustavosantos = openfile('./model/files/horas-por-colaborador/Gustavo_Santos.json')
+            return gustavosantos
+        elif projeto == "kleberoliveira":
+            kleberoliveira = openfile('./model/files/horas-por-colaborador/Kleber_Oliveira.json')
+            return kleberoliveira
+        elif projeto == "luccamelo":
+            luccamelo = openfile('./model/files/horas-por-colaborador/Lucca_Melo.json')
+            return luccamelo
+        elif projeto == "matheusbarros":
+            matheusbarros = openfile('./model/files/horas-por-colaborador/Matheus_Barros.json')
+            return matheusbarros
+        elif projeto == "pablomartins":
+            pablomartins = openfile('./model/files/horas-por-colaborador/Pablo_Martins.json')
+            return pablomartins
+        elif projeto == "rafaelxavier":
+            rafaelxavier = openfile('./model/files/horas-por-colaborador/Rafael_Xavier.json')
+            return rafaelxavier
+        elif projeto == "talitabraga":
+            talitabraga = openfile('./model/files/horas-por-colaborador/Talita_Braga.json')
+            return talitabraga
+        elif projeto == "vicentemoraes":
+            vicentemoraes = openfile('./model/files/horas-por-colaborador/Vicente_Moraes.json')
+            return vicentemoraes
