@@ -70,7 +70,8 @@ anajuliaH = horascolaborador('anajulia')
 antonionogueiraH = horascolaborador('antonionogueira')
 bernardosouzaH = horascolaborador('bernardosouza')
 carlosbatistaH = horascolaborador('carlosbatista')
-ceciliamoreiraH = horascolaborador('.ceciliamoreira')
+ceciliamoreiraH = horascolaborador('ceciliamoreira')
+celiaoliveiraH = horascolaborador('celiaoliveira')
 davibatistaH = horascolaborador('davibatista')
 elisioalbuquerqueH = horascolaborador('elisioalbuquerque')
 elisiomartinsH = horascolaborador('elisiomartins')
@@ -91,7 +92,8 @@ anajuliaT = taskcolaborador('anajulia')
 antonionogueiraT = taskcolaborador('antonionogueira')
 bernardosouzaT = taskcolaborador('bernardosouza')
 carlosbatistaT = taskcolaborador('carlosbatista')
-ceciliamoreiraT = taskcolaborador('.ceciliamoreira')
+ceciliamoreiraT = taskcolaborador('ceciliamoreira')
+celiaoliveiraT = taskcolaborador('celiaoliveira')
 davibatistaT = taskcolaborador('davibatista')
 elisioalbuquerqueT = taskcolaborador('elisioalbuquerque')
 elisiomartinsT = taskcolaborador('elisiomartins')
@@ -220,6 +222,8 @@ def projet(opcao, nome):
             return jsonify(carlosbatistaT)
         elif opcao == 'taskcolaborador' and nome == 'ceciliamoreira':
             return jsonify(ceciliamoreiraT)
+        elif opcao == 'taskcolaborador' and nome == 'celiaoliveira':
+            return jsonify(celiaoliveiraT)
         elif opcao == 'taskcolaborador' and nome == 'davibatista':
             return jsonify(davibatistaT)
         elif opcao == 'taskcolaborador' and nome == 'elisioalbuquerque':
@@ -258,6 +262,8 @@ def projet(opcao, nome):
             return jsonify(carlosbatistaH)
         elif opcao == 'horascolaborador' and nome == 'ceciliamoreira':
             return jsonify(ceciliamoreiraH)
+        elif opcao == 'horascolaborador' and nome == 'celiaoliveira':
+            return jsonify(celiaoliveiraH)
         elif opcao == 'horascolaborador' and nome == 'davibatista':
             return jsonify(davibatistaH)
         elif opcao == 'horascolaborador' and nome == 'elisioalbuquerque':
@@ -286,16 +292,6 @@ def projet(opcao, nome):
             return jsonify(talitabragaH)
         elif opcao == 'horascolaborador' and nome == 'vicentemoraes':
             return jsonify(vicentemoraesH)
-
-
-
-
-
-
-
-
-
-
         else:
             return "digite um projeto válido"
     elif opcao:
