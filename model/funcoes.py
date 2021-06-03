@@ -258,6 +258,9 @@ def taskcolaborador (projeto):
     elif projeto == "ceciliamoreira":
         ceciliamoreira = openfile('./model/files/tasks-por-colaborador/Cecilia_Moreira.json')
         return ceciliamoreira
+    elif projeto == "celiaoliveira":
+        celiaoliveira = openfile('./model/files/tasks-por-colaborador/Celia_Oliveira.json')
+        return celiaoliveira
     elif projeto == "davibatista":
         davibatista = openfile('./model/files/tasks-por-colaborador/Davi_Batista.json')
         return davibatista
@@ -318,6 +321,9 @@ def horascolaborador (projeto):
         elif projeto == "ceciliamoreira":
             ceciliamoreira = openfile('./model/files/horas-por-colaborador/Cecilia_Moreira.json')
             return ceciliamoreira
+        elif projeto == "celiaoliveira":
+            celiaoliveira = openfile('./model/files/horas-por-colaborador/Celia_Oliveira.json')
+            return celiaoliveira
         elif projeto == "davibatista":
             davibatista = openfile('./model/files/horas-por-colaborador/Davi_Batista.json')
             return davibatista
